@@ -1,0 +1,12 @@
+extends ../layout.pug
+
+block content
+  h3 All Courses
+  
+  ul
+    each course in courses
+      li
+        h3=course.title
+        ol
+          each project in course.projects
+            li=project
