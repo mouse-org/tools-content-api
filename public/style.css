@@ -2,3 +2,30 @@
   box-sizing: border-box;
   font-family: "Ariel", sans-serif;
 }
+
+
+
+
+
+
+
+
+/* Recreate Mouse Create Header */
+
+#top {
+  background-color: black;
+  color: white;
+}
+
+#group-name {
+  text-align: center;
+  font-weight: normal;
+}
+
+#profile-image {
+  max-width: 50px;
+}
+
+#more-button {
+  color: white;
+}
