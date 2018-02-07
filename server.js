@@ -23,7 +23,14 @@ app.use(express.static("public"));
 // - - - -
 var templateData = require("./helpers/template-data")();
 
-app.get("/", function(req, res) { 
+app.get("/", function(req, res) {
+  
+  var groupName = "";
+  if (req.query.groupName) {
+    groupName = req.query.groupName;
+  }
+  
+  
   res.send("index"); 
 });
 
