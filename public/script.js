@@ -1,5 +1,20 @@
 console.log("script.js");
 
+var router = new VueRouter({
+    mode: 'history',
+    routes: []
+});
+var vm =  new Vue({
+    router,
+    el: '#app',
+    mounted: function() {
+        gn = this.$route.query.gn
+        console.log(gn)
+    },
+});
+
+
+
 
 var group = new Vue({
   el: '#group-name',
