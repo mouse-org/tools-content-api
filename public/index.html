@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <div id="top">
+    <img src="https://mos-platform.modlabdev.com/img/mouse-create-logo-beta.png" />
+    <h3 id="group-name">
+      {{ name }}
+    </h3>
+    <div id="group-button">
+      <span v-html="button"></span>
+    </div>
+    <div id="projects-button">
+      <span v-html="button"></span>
+    </div>
+    <img id="profile-image" src="https://cdn.glitch.com/7624db55-7f29-4f14-b20d-661c32b3a265%2Fgear_default_avatar%402x.png?1518043502544">
+    <p>
+      Profile
+    </p>
+    <div id="notifications-button">
+      <span v-html="button"></span>
+    </div>
+    <div id="more-button">
+      <span v-html="button"></span>
+    </div>
+  </div>
+    
+  <ul id="menu">
+    <li>
+      <a href="/admin">Admin</a> 
+    </li>
+    <li>
+      <a href="/course-directory">Course Directory</a>
+    </li>
+  </ul>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

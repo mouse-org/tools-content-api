@@ -2,9 +2,6 @@ var express = require("express");
 var app = express();
 var path = require("path");
 
-const pug = require("pug");
-app.set('view engine', 'pug');
-app.set('views', path.join(__dirname, 'views'));
 app.locals.basedir = app.get('views');
 
 var auth = require("./helpers/auth")();
@@ -27,7 +24,7 @@ app.use(express.static("public"));
 var templateData = require("./helpers/template-data")();
 
 app.get("/", function(req, res) { 
-  res.render("index", templateData); 
+  res.send("index"); 
 });
 
 // Admin
